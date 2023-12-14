@@ -41,16 +41,7 @@ function buildcharts(sample_id)
             orientation: 'h'
         }]
         
-        // let barlayout = {
-        //     width: 400,
-        //     height: 800,
-        //     margin: {
-        //         l: 200,
-        //         r: 100,
-        //         b: -100,
-        //         t: -100
-        //     }  
-        // }
+
 
         Plotly.newPlot("bar", bartrace, {})
         
@@ -72,7 +63,9 @@ function buildcharts(sample_id)
         Plotly.newPlot("bubble", bubbletrace, {})
 
 })}
-        // Display the sample metadata
+        
+    // Display the sample metadata and 
+    // Display each key-value pair from the metadata JSON object somewhere on the page
 
     function buildMetadata (metainfo){
         d3.json(url).then(function(data){
@@ -89,28 +82,3 @@ function buildcharts(sample_id)
         })    
     }
         )}
-
-        // var sampleMetadata = {
-        //     id: 940,
-        //     ethnicity: 'Caucasian',
-        //     gender: 'F',
-        //     age: 24,
-        //     location: 'Beaufort/NC',
-        //     bbtype: 'i',
-        //     wfreq: 2
-        //     };
-            
-
-
-// Display the sample metadata
-
-
-// Display each key-value pair from the metadata JSON object somewhere on the page
-
-
-// Update all the plots when a new sample is selected
-
-
-// Deploy your app to a free static page hosting service, such as GitHub Pages. 
-// Submit the links to your deployment and your GitHub repo. 
-// Ensure that your repository has regular commits and a thorough README.md file
